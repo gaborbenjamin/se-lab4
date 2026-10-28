@@ -1,0 +1,4 @@
+GT4500,10,0,10,0
+TORPEDO,SINGLE # SINGLE: Elsőre az első lő
+TORPEDO,SINGLE # SINGLE: A tárak felváltva lőnek
+TORPEDO,ALL    # ALL: mindkettőből megpróbál lőni

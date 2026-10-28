@@ -1,0 +1,4 @@
+GT4500,1,0,1,0
+TORPEDO,ALL # Kilövünk mindent
+TORPEDO,SINGLE # SINGLE: Nincs torpedó
+TORPEDO,ALL # ALL: Egyik sem tud lőni

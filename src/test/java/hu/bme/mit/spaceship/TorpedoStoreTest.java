@@ -17,4 +17,31 @@ class TorpedoStoreTest {
         // Assert
         assertEquals(true, result);
     }
+
+    @Test 
+    void fire_Failure() {
+        // Arrange
+        TorpedoStore store = new TorpedoStore(1, 1.0);
+
+        // Act
+        boolean result = store.fire(1);
+
+        // Assert
+        assertEquals(false, result);
+    }
+
+    @Test 
+    void torpedoCountDecreasesAfterFire() {
+        // Arrange
+        TorpedoStore store = new TorpedoStore(2);
+
+        // Act
+        store.fire(1);
+        int remainingTorpedoes = store.getTorpedoCount();
+
+        // Assert
+        assertEquals(1, remainingTorpedoes);
+    }
+
+    
 }
